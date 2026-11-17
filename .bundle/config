@@ -1,0 +1,5 @@
+---
+BUNDLE_BUILD__HTTP_PARSER__RB: "--with-cflags=-Wno-error=implicit-function-declaration -Wno-error=incompatible-function-pointer-types"
+BUNDLE_BUILD__EVENTMACHINE: "--with-cflags=-Wno-error=implicit-function-declaration -Wno-error=incompatible-function-pointer-types"
+BUNDLE_BUILD__JSON: "--with-cflags=-Wno-error"
+BUNDLE_BUILD__COMMONMARKER: "--with-cflags=-Wno-error"

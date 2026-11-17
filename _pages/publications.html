@@ -1,0 +1,97 @@
+---
+title: "Y. Cao Lab - Publications"
+layout: gridlay
+excerpt: "Y. Cao Lab: Publications"
+sitemap: false
+permalink: /publications/
+---
+<div class="pubs">
+<h1>Publications</h1>
+
+<h2 class="pubs-h">Featured research</h2>
+<div class="feat-list">
+{%- for p in site.data.publist -%}
+{%- if p.featured == 1 -%}
+<div class="feat">
+<div class="feat-top">
+{%- if p.image %}
+<img class="feat-img" src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ p.image }}" alt="">
+{%- endif %}
+<div class="feat-head">
+<div class="feat-title">{{ p.title }}</div>
+<div class="feat-authors">{{ p.authors | replace: "Yinan Cao", "<strong>Yinan Cao</strong>" }}</div>
+{%- if p.summary %}
+<p class="feat-summary">{{ p.summary }}</p>
+{%- endif %}
+<div class="feat-meta">{{ p.year }} &middot; {{ p.venue }}</div>
+<div class="pub-links">
+{%- for l in p.links %}<a class="pub-btn" href="{{ l.url }}">{{ l.label }}</a>{% endfor -%}
+</div>
+</div>
+</div>
+</div>
+{%- endif -%}
+{%- endfor -%}
+</div>
+
+<h2 class="pubs-h">By research topic</h2>
+<div class="year-filter" id="year-filter">
+<button type="button" class="yf active" data-topic="all">All</button>
+{%- assign topic_list = "Information seeking/sampling|MEG|Attention|Computational modeling|Neural network models" | split: "|" -%}
+{%- for t in topic_list %}<button type="button" class="yf" data-topic="{{ t }}">{{ t }}</button>{% endfor -%}
+</div>
+<p class="pubs-count" id="pubs-count">Showing all publications</p>
+
+<ul class="pub-list" id="pub-list">
+{%- for p in site.data.publist -%}
+<li class="pub-item" data-topics="{{ p.topics | join: '|' }}">
+<div class="pub-year">{{ p.year }}</div>
+<div class="pub-main">
+<div class="pub-title">{{ p.title }}</div>
+<div class="pub-authors">{{ p.authors | replace: "Yinan Cao", "<strong>Yinan Cao</strong>" }}</div>
+<div class="pub-venue">{{ p.venue }}</div>
+<div class="pub-links">
+{%- for l in p.links %}<a class="pub-btn" href="{{ l.url }}">{{ l.label }}</a>{% endfor -%}
+</div>
+</div>
+</li>
+{%- endfor -%}
+</ul>
+</div>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll('#year-filter .yf');
+  var items = document.querySelectorAll('#pub-list .pub-item');
+  var count = document.getElementById('pubs-count');
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = b.getAttribute('data-topic');
+      buttons.forEach(function (x) { x.classList.toggle('active', x === b); });
+      var n = 0;
+      items.forEach(function (it) {
+        var show = (t === 'all' || it.getAttribute('data-topics').split('|').indexOf(t) !== -1);
+        it.style.display = show ? '' : 'none';
+        if (show) n++;
+      });
+      count.textContent = (t === 'all') ? 'Showing all publications' : 'Showing ' + n + ' publication' + (n === 1 ? '' : 's') + ' on ' + t;
+    });
+  });
+})();
+</script>
+
+<script>
+/* Give all featured boxes the same height, equal to the shortest one (wide screens only) */
+(function () {
+  function equalize() {
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.feat'));
+    if (!cards.length) return;
+    cards.forEach(function (c) { c.style.height = ''; c.style.overflow = ''; });
+    if (window.innerWidth < 768) return;
+    var min = Math.min.apply(null, cards.map(function (c) { return c.offsetHeight; }));
+    cards.forEach(function (c) { c.style.height = min + 'px'; c.style.overflow = 'hidden'; });
+  }
+  window.addEventListener('load', equalize);
+  window.addEventListener('resize', equalize);
+})();
+</script>

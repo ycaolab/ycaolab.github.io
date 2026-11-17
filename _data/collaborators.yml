@@ -1,0 +1,38 @@
+# One entry per collaborator, ordered by first name.
+# topics, methods, url and affiliation are optional. Names only, no academic titles.
+
+- name: Jens-Max Hopf
+  topics: visual information processing and cortical representations
+  methods: MEG
+  affiliation: OvGU
+  url: https://cbbs.eu/Organisation/Organisation+engl_/Members/Jens_Max+Hopf-p-18194.html
+
+- name: Konstantinos Tsetsos
+  topics: sampling across multi-attribute multi-alternative choice; decision irrationality
+  methods: MEG (SQUID + OPM)
+  affiliation: Trinity College Dublin
+  url: https://www.ktsetsoslab.net
+
+- name: Stefan Pollmann
+  topics: overt information sampling
+  methods: fMRI; MEG
+  affiliation: OvGU
+  url: https://www.ipsy.ovgu.de/allgpsych.html
+
+- name: Tobias H. Donner
+  topics: neuromodulation of cortical dynamics during information seeking
+  methods: pharmacological MEG
+  affiliation: University Medical Center Hamburg-Eppendorf (UKE)
+  url: https://tobiasdonner.net
+
+- name: Tömme Noesselt
+  topics: multisensory information sampling and modeling
+  methods: EEG
+  affiliation: OvGU
+  url: https://www.ovgu.de/Noesselt.html
+
+- name: Valentin Wyart
+  topics: computational modeling; information seeking
+  methods: MEG; EEG
+  affiliation: École normale supérieure, Paris
+  url: https://scholar.google.com/citations?user=gN_DidAAAAAJ&hl=en

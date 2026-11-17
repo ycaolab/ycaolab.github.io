@@ -1,0 +1,123 @@
+# Newest first.
+# featured: 1 shows the paper in the "Featured research" cards at the top.
+# topics: any of Information seeking/sampling, MEG, Attention, Computational modeling, Neural network models (used for the filter buttons).
+# image is optional: put the picture in images/pubpic/ and write its file name.
+# links: add as many {label, url} pairs as you like (Paper, Preprint, PDF, Code, Data ...).
+
+- title: "Humans use a dual policy to improve inferences during epistemic information seeking"
+  year: 2026
+  topics: [Information seeking/sampling, Computational modeling, Neural network models]
+  venue: Nature Human Behaviour (in press)
+  authors: Yinan Cao, Clémence Alméras, Junseok K. Lee, Inès Maye, Valentin Wyart
+  featured: 1
+  image: cao-2026-dual-policy.png
+  summary: We show that people seeking information use two policies together to sharpen noisy inferences, outside the usual explore-exploit tradeoff.
+  links:
+    - label: Preprint
+      url: https://www.biorxiv.org/content/10.1101/2025.10.08.681186
+    - label: Code
+      url: https://github.com/YinanCao/InfoSeek
+
+- title: "Rhythmic sampling of multiple decision alternatives in the human brain"
+  year: 2026
+  topics: [MEG, Attention, Information seeking/sampling]
+  venue: Nature Communications
+  authors: Marcus Siems, Yinan Cao, Maryam Tohidi-Moghaddam, Tobias H. Donner, Konstantinos Tsetsos
+  featured: 1
+  image: siems-2026-rhythmic-sampling.png
+  summary: Using MEG, we show that the brain samples several decision alternatives in a rhythmic way rather than all at once.
+  links:
+    - label: Paper
+      url: https://www.nature.com/articles/s41467-026-69379-z
+    - label: Preprint
+      url: https://www.biorxiv.org/content/10.1101/2023.12.08.570734v5
+    - label: Data
+      url: https://osf.io/tf6bw/overview
+
+- title: "High-amplitude oscillatory events orchestrate cortical activity for efficient cognition"
+  year: 2025
+  topics: [MEG]
+  venue: bioRxiv (preprint)
+  authors: Marcus Siems, Yinan Cao, Tobias H. Donner, Konstantinos Tsetsos, Andreas K. Engel
+  featured: 0
+  image:
+  summary:
+  links:
+    - label: Preprint
+      url: https://www.biorxiv.org/content/10.1101/2025.11.21.689181
+
+- title: "Perspectives on the mechanistic underpinnings of choice biases"
+  year: 2025
+  topics: [Computational modeling]
+  venue: In Decision Making, Studies in Neuroscience, Psychology and Behavioral Economics, Springer
+  authors: Konstantinos Tsetsos, Yinan Cao
+  featured: 1
+  image: tsetsos-2025-choice-biases.jpg
+  summary: We offer a theoretical perspective that ties choice biases to specific decision computations and shows how time-resolved neural evidence can distinguish them.
+  links:
+    - label: Chapter
+      url: https://link.springer.com/chapter/10.1007/978-3-032-00880-0_5
+    - label: Preprint PDF
+      url: https://yinancao.github.io/publications/Tsetsos_Cao_mechanisms_preprint_hq.pdf
+
+- title: "Decision bias and sampling asymmetry in reward-guided learning"
+  year: 2023
+  topics: [Computational modeling, Information seeking/sampling]
+  venue: bioRxiv (preprint)
+  authors: Yinan Cao, Konstantinos Tsetsos
+  featured: 0
+  image:
+  summary:
+  links:
+    - label: Preprint
+      url: https://www.biorxiv.org/content/10.1101/2023.09.10.557023
+
+- title: "Clarifying the role of an unavailable distractor in human multiattribute choice"
+  year: 2022
+  topics: [Computational modeling]
+  venue: eLife
+  authors: Yinan Cao, Konstantinos Tsetsos
+  featured: 1
+  image: cao-2022-distractor.png
+  summary: We revisit how an option that cannot be chosen still influences choices between the options that can.
+  links:
+    - label: Paper
+      url: https://elifesciences.org/articles/83316
+    - label: PDF
+      url: https://yinancao.github.io/publications/Cao-eLife-2022-83316-v2.pdf
+    - label: Code
+      url: https://github.com/YinanCao/multiattribute-distractor
+
+- title: "Characterizing emergent representations in a space of candidate learning rules for deep networks"
+  year: 2020
+  topics: [Neural network models]
+  venue: Advances in Neural Information Processing Systems (NeurIPS)
+  authors: Yinan Cao, Christopher Summerfield, Andrew Saxe
+  featured: 1
+  image: cao-2020-learning-rules.png
+  summary: We map how different learning rules shape the representations that emerge in deep networks.
+  links:
+    - label: Paper
+      url: https://proceedings.neurips.cc/paper/2020/hash/6275d7071d005260ab9d0766d6df1145-Abstract.html
+    - label: PDF
+      url: https://yinancao.github.io/publications/NeurIPS-2020-characterizing-emergent-representations-in-a-space-of-candidate-learning-rules-for-deep-networks-Paper.pdf
+    - label: Supplement
+      url: https://yinancao.github.io/publications/NeurIPS-2020-characterizing-emergent-representations-in-a-space-of-candidate-learning-rules-for-deep-networks-Supplemental.pdf
+    - label: Code
+      url: https://github.com/YinanCao/NeurIPS2020_learningrules
+
+- title: "Causal inference in the multisensory brain"
+  year: 2019
+  topics: [Computational modeling, MEG, Attention]
+  venue: Neuron
+  authors: Yinan Cao, Christopher Summerfield, Hame Park, Bruno L. Giordano, Christoph Kayser
+  featured: 1
+  image: cao-2019-causal-inference.png
+  summary: We show how the brain decides whether sights and sounds come from a common source, and where these computations unfold.
+  links:
+    - label: Paper
+      url: https://doi.org/10.1016/j.neuron.2019.03.043
+    - label: PDF
+      url: https://yinancao.github.io/publications/Cao-et-al-Neuron-2019.pdf
+    - label: Code
+      url: https://github.com/YinanCao/Causal-Inference

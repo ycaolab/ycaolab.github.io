@@ -1,0 +1,51 @@
+# group: pi shows the large card at the top, group: lab shows the smaller cards under "Lab".
+# photo is optional: put the picture in images/teampic/ and write its file name (square crop looks best).
+# Without a photo, a circle with initials is shown.
+# links: add {label, url} pairs (Website, Scholar, ORCID, CV ...).
+# placeholder: 1 draws the card with a dashed outline (open spot).
+
+- name: Yinan Cao
+  group: pi
+  role: "Juniorprofessor (W1, tenure track to W3) for General Psychology and Cognitive Modeling"
+  photo: yinan-cao.jpg
+  initials: YC
+  bio: "I trained as an engineer and got hooked on the human mind along the way. My interest in cognition is broad, but what draws me most is explaining characteristic features of human cognition, such as decision bias and variability, by identifying the latent objectives and constraints behind them. My research asks how people select and process information under uncertainty to behave adaptively. I combine computational modeling, both algorithmic cognitive models and artificial neural networks, with model-based neuroimaging, mainly magnetoencephalography and electroencephalography (M/EEG), to link latent computations to their neural representations. I did my PhD in Experimental Psychology at Oxford, then worked as a postdoc at UKE Hamburg and as a Marie Skłodowska-Curie fellow at ENS Paris."
+  links:
+    - label: Neurotree
+      url: https://neurotree.org/neurotree/tree.php?pid=772101
+    - label: Bluesky
+      url: https://bsky.app/profile/ycaoneuro.bsky.social
+    - label: ORCID
+      url: https://orcid.org/0000-0002-9881-5106
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=Bh5cUIoAAAAJ&hl=en
+    - label: GitHub homepage
+      url: https://yinancao.github.io
+
+- name: You
+  group: lab
+  role: PhD Student
+  photo:
+  initials: "?"
+  placeholder: 1
+
+- name: You
+  group: lab
+  role: Postdoctoral Researcher
+  photo:
+  initials: "?"
+  placeholder: 1
+
+- name: You
+  group: lab
+  role: Research Assistant (HiWi)
+  photo:
+  initials: "?"
+  placeholder: 1
+
+- name: You
+  group: lab
+  role: Master's Thesis Student
+  photo:
+  initials: "?"
+  placeholder: 1

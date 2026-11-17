@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<div class="home-page">
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>{{ page.hero_title }}</h1>
+      <p class="hero-tagline">{{ page.hero_tagline }}</p>
+      <ul class="hero-affil">
+        {% for line in page.hero_affiliation %}<li>{{ line }}</li>{% endfor %}
+      </ul>
+    </div>
+    {% if page.hero_video %}
+    <figure class="hero-media">
+      <video autoplay muted loop playsinline preload="auto"
+             poster="{{ site.url }}{{ site.baseurl }}/{{ page.hero_poster }}">
+        <source src="{{ site.url }}{{ site.baseurl }}/{{ page.hero_video }}" type="video/mp4">
+      </video>
+    </figure>
+    {% endif %}
+  </section>
+
+  <div class="home-body">
+    <div class="home-main">
+      {{ content }}
+
+      {% assign shown = 0 %}
+      {% capture cards %}
+      {% for publi in site.data.publist %}
+        {% if publi.highlight == 1 and publi.image and publi.image != "" and shown < 3 %}
+        {% assign shown = shown | plus: 1 %}
+        <a class="work-card" href="{{ publi.link.url }}">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" alt="">
+          <span class="work-venue">{{ publi.link.display }}</span>
+          <span class="work-title">{{ publi.title }}</span>
+        </a>
+        {% endif %}
+      {% endfor %}
+      {% endcapture %}
+      {% if shown > 0 %}
+      <section class="recent-work">
+        <h2>Recent work</h2>
+        <div class="work-grid">{{ cards }}</div>
+        <p class="more-link"><a href="{{ site.url }}{{ site.baseurl }}/publications/">All publications &rarr;</a></p>
+      </section>
+      {% endif %}
+    </div>
+
+    <div class="home-side">
+      {% include news.html %}
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,62 @@
+---
+title: "Y. Cao Lab - People"
+layout: gridlay
+excerpt: "Y. Cao Lab: People"
+sitemap: false
+permalink: /people/
+---
+<div class="team">
+<h1>People</h1>
+
+<h2 class="pubs-h">Head of the research group</h2>
+{%- for m in site.data.team_members -%}
+{%- if m.group == "pi" -%}
+<div class="pi-card">
+{%- if m.photo %}
+<img class="person-photo pi-photo" src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ m.photo }}" alt="{{ m.name }}">
+{%- else %}
+<div class="person-photo pi-photo person-initials">{{ m.initials }}</div>
+{%- endif %}
+<div class="pi-body">
+<h3 class="person-name">{{ m.name }}</h3>
+<div class="person-role">{{ m.role }}</div>
+<p class="pi-bio">{{ m.bio }}</p>
+<div class="pub-links">
+{%- for l in m.links %}<a class="pub-btn" href="{{ l.url }}">{{ l.label }}</a>{% endfor -%}
+</div>
+</div>
+</div>
+{%- endif -%}
+{%- endfor -%}
+
+<h2 class="pubs-h">Lab <a class="lab-join" href="{{ site.url }}{{ site.baseurl }}/vacancies">(recruiting)</a></h2>
+<div class="lab-grid">
+{%- for m in site.data.team_members -%}
+{%- if m.group == "lab" -%}
+<div class="person{% if m.placeholder == 1 %} person-open{% endif %}">
+{%- if m.photo %}
+<img class="person-photo" src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ m.photo }}" alt="{{ m.name }}">
+{%- else %}
+<div class="person-photo person-initials">{{ m.initials }}</div>
+{%- endif %}
+<h4 class="person-name">{{ m.name }}</h4>
+<div class="person-role">{{ m.role }}</div>
+{%- if m.links %}
+<div class="pub-links person-links">
+{%- for l in m.links %}<a class="pub-btn" href="{{ l.url }}">{{ l.label }}</a>{% endfor -%}
+</div>
+{%- endif %}
+</div>
+{%- endif -%}
+{%- endfor -%}
+</div>
+
+<h2 class="pubs-h">Collaborators</h2>
+<ul class="collab-list">
+{%- for c in site.data.collaborators %}
+<li>{% if c.title %}{{ c.title }} {% endif %}{% if c.url %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% if c.affiliation %}<span class="collab-aff">, {{ c.affiliation }}</span>{% endif %}{% if c.topics %}<span class="collab-topics">Collaboration on {{ c.topics }}{% if c.methods %} | {{ c.methods }}{% endif %}</span>{% endif %}</li>
+{%- endfor %}
+</ul>
+
+<p class="team-join">Interested in joining the lab? See the <a href="{{ site.url }}{{ site.baseurl }}/vacancies">Join</a> page.</p>
+</div>
