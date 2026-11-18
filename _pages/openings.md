@@ -8,7 +8,7 @@ permalink: /vacancies
 
 # Join
 
-We have two open positions at Otto-von-Guericke University Magdeburg. Both run for 3 years.
+We have two open PhD positions at Otto-von-Guericke University Magdeburg. Each is funded for 3 years.
 
 ### PhD position 1 (jointly supervised with Stefan Pollmann)
 
