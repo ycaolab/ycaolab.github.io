@@ -11,6 +11,8 @@
   initials: YC
   bio: "I trained as an engineer and got hooked on the human mind along the way. My interest in cognition is broad, but what draws me most is explaining characteristic features of human cognition, such as decision bias and variability, by identifying the latent objectives and constraints behind them. My research asks how people select and process information under uncertainty to behave adaptively. I combine computational modeling, both algorithmic cognitive models and artificial neural networks, with model-based neuroimaging, mainly magnetoencephalography and electroencephalography (M/EEG), to link latent computations to their neural representations. I did my PhD in Experimental Psychology at Oxford, then worked as a postdoc at UKE Hamburg and as a Marie Skłodowska-Curie fellow at ENS Paris."
   links:
+    - label: CV
+      url: /files/CV_Yinan_Cao_Nov2026.pdf
     - label: Neurotree
       url: https://neurotree.org/neurotree/tree.php?pid=772101
     - label: Bluesky
