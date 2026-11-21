@@ -10,7 +10,7 @@ permalink: /vacancies
 
 We have two open PhD positions at Otto-von-Guericke University Magdeburg. Each is funded for 3 years.
 
-### PhD position 1 (jointly supervised with Stefan Pollmann)
+### PhD position 1 (co-supervised by me and Prof. Stefan Pollmann)
 
 Gaze sampling, its neural trace, and neural network learning theory. You will work on how gaze sampling shapes neural representations, and on neural network models of learning that connect to these data. <span class="soon">[\*official post coming soon]</span>
 
