@@ -1,5 +1,5 @@
 ---
-title: "Y. Cao Lab"
+title: "Decision and Information Sampling Lab (DISL)"
 layout: homelay
 excerpt: "Y. Cao Lab at Otto-von-Guericke University Magdeburg."
 sitemap: false

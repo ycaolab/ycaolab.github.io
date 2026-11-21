@@ -1,5 +1,5 @@
 ---
-title: "Y. Cao Lab - Core values"
+title: "DISL - Core values"
 layout: textlay
 excerpt: "Core values"
 sitemap: false

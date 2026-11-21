@@ -1,5 +1,5 @@
 ---
-title: "Y. Cao Lab - Research"
+title: "DISL - Research"
 layout: textlay
 excerpt: "Y. Cao Lab: Research"
 sitemap: false
