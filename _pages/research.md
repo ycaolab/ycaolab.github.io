@@ -90,7 +90,7 @@ The lab is part of the Institute of Psychology at Otto-von-Guericke University. 
 
 **Within the Institute of Psychology.** Our lab and the General Psychology division host EEG (BioSemi) and multiple eye tracking (EyeLink) systems for behavioral and electrophysiological experiments.
 
-**MEG.** The lab can run MEG experiments in Magdeburg together with local collaborators. MEG has millisecond resolution, which suits questions about attention sampling and decision dynamics.
+**MEG.** The lab runs MEG experiments in Magdeburg through a local partnership, using an Elekta Neuromag system. MEG has millisecond resolution, which suits questions about attention sampling and decision dynamics.
 
 **Functional MRI.** Several scanners at 3T and 7T are available across the OvGU campus. The lab and the General Psychology division have frequent access to them through local collaborations.
 
