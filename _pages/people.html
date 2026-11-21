@@ -41,6 +41,7 @@ permalink: /people/
 {%- endif %}
 <h4 class="person-name">{{ m.name }}</h4>
 <div class="person-role">{{ m.role }}</div>
+{%- if m.bio %}<p class="person-bio">{{ m.bio }}</p>{% endif -%}
 {%- if m.links %}
 <div class="pub-links person-links">
 {%- for l in m.links %}<a class="pub-btn" href="{{ l.url }}">{{ l.label }}</a>{% endfor -%}

@@ -36,12 +36,12 @@
   initials: "?"
   placeholder: 1
 
-- name: You
+- name: Hendrik Marchand
   group: lab
   role: Research Assistant (HiWi)
-  photo:
-  initials: "?"
-  placeholder: 1
+  photo: silhouette-male.svg
+  initials: HM
+  bio: "Hendrik is a Bachelor student in Psychology at OvGU."
 
 - name: You
   group: lab
